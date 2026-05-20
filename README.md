@@ -90,4 +90,4 @@ If you have training data, use your existing `generate_dataset.py` and `train_mo
 
 ---
 
-Built by **Kartik Garg** · Computer Science Project
+Built by **Team Shalimar** Respected Members are -**Katyayni Sood** **Harsh Bhardawaj** **Kartik Garg** **Jhanavi Abrol** · Computer Science Project
