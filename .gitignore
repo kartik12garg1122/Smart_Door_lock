@@ -1,0 +1,45 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+web_modules/
+
+# Build outputs
+dist/
+build/
+bin/
+obj/
+out/
+*.spec
+
+# Editor / IDE directories
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python / Flask
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+ENV/
+env/
+
+# Project-specific sensitive and database files
+Python_Server/app.db
+Python_Server/dataset/
+Python_Server/intruders/
+Python_Server/trainer/embeddings.pkl
+Python_Server/trainer/labels.json
+Python_Server/temp_capture.jpg
+*.log

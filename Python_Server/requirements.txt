@@ -1,0 +1,12 @@
+flask
+flask-cors
+opencv-contrib-python
+numpy
+pyserial
+Flask-SQLAlchemy
+argon2-cffi
+cryptography
+Flask-JWT-Extended
+Pillow
+deepface
+waitress

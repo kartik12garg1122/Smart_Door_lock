@@ -1,0 +1,179 @@
+/* ── Shalimar Security Architecture — Red Noir Theme ── */
+.arch-page {
+  min-height: 100vh;
+  background: var(--d-bg);
+  color: var(--d-text);
+  font-family: 'Inter', sans-serif;
+  padding-bottom: 80px;
+}
+
+.arch-header {
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+.arch-header h1 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.arch-header h1 span {
+  color: var(--d-red);
+}
+
+.arch-header p {
+  color: var(--d-muted);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.arch-section {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+}
+
+.arch-section-title {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: -0.01em;
+}
+
+.arch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.arch-card {
+  background: var(--d-card);
+  border: 1px solid var(--d-border);
+  border-radius: 16px;
+  padding: 28px;
+  transition: transform 0.3s var(--d-ease), border-color 0.3s;
+}
+
+.arch-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--d-border-h);
+}
+
+.arch-card-icon {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  display: inline-block;
+  padding: 14px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.arch-card-title {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.arch-card-desc {
+  color: var(--d-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.arch-flow {
+  background: var(--d-card);
+  border: 1px solid var(--d-border);
+  border-radius: 16px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.arch-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.arch-step:last-child {
+  margin-bottom: 0;
+}
+
+.arch-step::before {
+  content: '';
+  position: absolute;
+  left: 23px;
+  top: 48px;
+  bottom: -40px;
+  width: 2px;
+  background: var(--d-border);
+}
+
+.arch-step:last-child::before {
+  display: none;
+}
+
+.arch-step-num {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(239,35,60,0.1);
+  border: 1px solid rgba(239,35,60,0.3);
+  color: var(--d-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  flex-shrink: 0;
+  box-shadow: 0 0 20px rgba(239,35,60,0.1);
+  z-index: 1;
+}
+
+.arch-step-content h3 {
+  color: #fff;
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+
+.arch-step-content p {
+  color: var(--d-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .arch-header h1 {
+    font-size: 2.2rem;
+  }
+  .arch-step {
+    gap: 16px;
+  }
+  .arch-step-num {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .arch-step::before {
+    left: 19px;
+    top: 40px;
+  }
+}
